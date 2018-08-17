@@ -20,12 +20,12 @@ import socket
 
 f = open("Data.txt", 'r+')
 
-HOST = '10.245.146.150'
-USER = 'root'
-PASSWD = 'platform'
+HOST = 'your host'
+USER = 'host user'
+PASSWD = 'host password'
 PORT = ''
 CHARSET = 'utf8'
-DATABASE = 'WHOIS_SERVICE'
+DATABASE = 'your mysql database'
 
 class MainHandler(tornado.web.RequestHandler):
     """controll"""
