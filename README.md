@@ -8,5 +8,6 @@
 * 支持ip反查
 * 支持数据库存取
 * 支持数据记录
-* ![image](https://github.com/WangJunx/Whois-Service/blob/master/show.png)
 * ![image](https://github.com/WangJunx/Whois-Service/blob/master/index.png)
+* ![image](https://github.com/WangJunx/Whois-Service/blob/master/show.png)
+
