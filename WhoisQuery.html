@@ -1,0 +1,206 @@
+<!--@WUD 2017/12/23-->
+<!--GET INFORMATION FROM THIS WEB--->
+<html>
+<head>
+	<title>Whois查询系统</title>
+	<link rel= "short icon" href="http://www.wangjunx.top/sucaiphotos/10-160103155A33N.jpg">
+</head>
+<body>
+<meta charset = "utf-8">
+<style type="text/css">
+<!--尽量少的使用文字，避免不同浏览器处理文字时的冲突-->
+{background: white;}
+.biaoti{
+	position:absolute;
+	height:20%;
+	right:35.5%;
+	top:20%;
+	color:2a3237;
+	font-size:60px;
+	font-weight:bold;
+}
+.fubiaoti{
+	position: absolute;
+	right:58.5%;
+	top:40.5%;
+	font-size:22px;
+	font-family:宋体;
+	font-wight:bold;
+}
+.fubiaoti1{
+	position: absolute;
+	right:31.7%;
+	top:40.8%;
+	font-size:20px;
+	font-family:宋体;
+	font-wight:bold;
+}
+input {
+	position: absolute;
+	width: 37%;
+	height: 8%;
+	right: 37.5%;
+	padding-left: 10px;
+	border: 2px solid 2a3237;
+	border-radius: 5px;
+	outline: none;
+	background: white;
+	color: 2a3237;
+	top:44%;
+	font-family:宋体;	
+	font-size:20px;
+}
+select{
+	position: absolute;
+	width: 4.7%;
+	height: 8%;
+	right: 33.4%;
+	padding-left: 10px;
+	border: 2px ;
+	border-radius: ;
+	outline: none;
+	background-color:2a3237;
+	color:white;
+	top:44%;
+	font-family:宋体;	
+	font-size:20px;
+}
+button {
+  position: absolute; 
+  top: 44%;
+  right: 26.6%;
+  width: 8%;
+  height: 8%;
+  border: none;
+  background-color:2a3237;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-family:宋体;	
+  font-size:20px;
+  font-weight: bold;
+  color: white;
+}
+button:before {
+  font-family: 宋体;
+  font-size: 12px;
+  color: f26c1f;
+}
+.tipinfo{
+	position:absolute;
+	top:70%;
+	color:grey;
+	font-size:15px;
+	right:22%;
+	font-wight:bold;
+}
+.tip{
+	position:absolute;
+	top:70%;
+	color:grey;
+	font-size:35px;
+	right:78.5%;
+	font-weight:bold;
+}
+.user_ip{
+	position:absolute;
+	top:52%;
+	width:20%;
+	right:54.5%;
+	font-size:20px;
+	font-family:宋体;
+	color:green;
+	font-weight:bold;
+}
+.user_addr{
+	position:absolute;
+	top:70%;
+	width:20%;
+	right:43%;
+	font-size:20px;
+	font-family:宋体;
+	color:grey;
+}
+.domain{
+	position:absolute;
+	top:56%;
+	width:50%;
+	right:24.5%;
+	font-size:20px;
+	font-family:宋体;
+	color:grey;
+}
+.domain0{
+	position:absolute;
+	top:56%;
+	width:50%;
+	right:8%;
+	font-size:20px;
+	font-family:宋体;
+	color:grey;
+}
+.domain1{
+	position:absolute;
+	top:60%;
+	width:50%;
+	right:8%;
+	font-size:20px;
+	font-family:宋体;
+	color:grey;
+}
+.domain2{
+	position:absolute;
+	top:64%;
+	width:50%;
+	right:8%;
+	font-size:20px;
+	font-family:宋体;
+	color:grey;
+}
+</style>  
+<!--尽量少使用div标签，同样为了减少不同浏览器处理时的不兼容WTF-->
+	<div class= "biaoti">
+	WHOIS查询🔎
+	</div>
+		<div class="fubiaoti">
+		域名信息查询(Domain)
+			</div>
+			<div class = "fubiaoti1">
+				 域名所有者、到期日、所属注册商等信息
+				</div>
+		<form  action="/search" method="post" name= "URL/IP" >
+				<input type= "text" name= "URL/IP" id= "user" placeholder= "请输入域名 例如www.wangjunx.top">
+				<select name="Query_way">
+				<option value = "URL">URL</option>
+				<option value = "IP">IP</option>
+				</select>
+				<button type= "submit" id= "submit">查一查</button>
+			</form>
+			<div class = "user_ip">
+			你的IP地址为 {{ip}}
+			</div>
+			<!--
+			<div class = "user_addr">
+			你所在位置为 {{address}}
+			</div>
+			-->
+			<div class="tip">
+			</div>
+		<div class= "tipinfo">
+		<pre>
+	
+		</pre>
+		</div>
+		<div class= "domain">
+		这些域名经常被查询
+		</div>
+				<div class= "domain0">
+		{{domain0}}
+		</div>
+				<div class= "domain1">
+		{{domain1}}
+		</div>
+				<div class= "domain2">
+		{{domain2}}
+		</div>
+		</body>
+</html>
