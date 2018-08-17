@@ -10,4 +10,4 @@
 * 支持数据记录
 * ![image](https://github.com/WangJunx/Whois-Service/blob/master/index.png)
 * ![image](https://github.com/WangJunx/Whois-Service/blob/master/show.png)
-
+* 在查询界面，默认使用URL进行查询，可以选择查询模式为IP查询，当然IP反查的效果并不是特别好，需要进一步的优化，除此以外，对于查询到的w信息会在数据库中进行记录，关键信息domain、host、hsot_addr、query_time、whois_result会在数据库中进行记录，当存入数据库出现问题，则会选择部分数据记录在文件Data.txt中。
