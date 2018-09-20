@@ -6,7 +6,7 @@
 * Cyberspace Security
 * 基于python-whoisf库进行whois探测  #  基于tornado框架
 * 支持ip反查  #  目前反查效果比较差，只是实现了框架
-* 支持数据库存取  #  使用前要安装python-mysql库
+* 支持数据库存取  #  使用前要安装mysqk-python库 一般需要使用apt-get install libmysqlclient-dev 安装info.egg包
 * 支持数据记录
 * 首页
 * ![image](https://github.com/WangJunx/Whois-Service/blob/master/index.png)
