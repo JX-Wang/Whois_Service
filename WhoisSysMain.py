@@ -40,8 +40,8 @@ class MainHandler(tornado.web.RequestHandler):
             print self.cursor.execute("USE " + DATABASE)
         except Exception as e:
             if str(e).find("Unknown database"):  # 为创建的数据库对象
-                self.cursor.execute("CREATE DATABASE IF NOT EXISTS " + DATABASE)
-                self.cursor.execute("USE " + DATABASE)
+                self.cursor.execute("CREATE DATABASE IF NOT EXISTS {Value}".format(DATABASE))
+                self.cursor.execute("USE {Value}".format(DATABASE))
                 sql = """CREATE TABLE whois_record(
                         Domain CHAR(20) NOT NULL primary key,
                         Domain_ip CHAR(20),
@@ -50,7 +50,8 @@ class MainHandler(tornado.web.RequestHandler):
                         Query_time CHAR(20),
                         Whois_info TEXT)"""
                 self.cursor.execute(sql)
-        User_ip = socket.gethostbyname(socket.gethostname())
+        # User_ip = socket.gethostbyname(socket.gethostname())
+        User_ip = 172.0.0.1
         try:
             http_url = "http://www.ip138.com/ips138.asp?ip="+User_ip+"&action=2"
             # print http_url
