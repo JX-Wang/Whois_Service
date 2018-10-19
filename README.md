@@ -2,8 +2,8 @@
 基于web的whois查询服务
 * author@wud-WangJunx
 * data@2017/12/17
-* Harbin Institute Of Technology at Weihai
-* Cyberspace Security
+* [Harbin Institute Of Technology at Weihai](http://www.hitwh.edu.cn)
+
 * 基于python-whoisf库进行whois探测  #  基于tornado框架
 * 支持ip反查  #  目前反查效果比较差，只是实现了框架
 * 支持数据库存取  #  使用前要安装mysqk-python库 一般需要使用apt-get install libmysqlclient-dev 安装info.egg包
